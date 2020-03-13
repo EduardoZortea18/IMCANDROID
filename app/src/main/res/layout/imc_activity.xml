@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<ScrollView android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CalcularIMC">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPeso"
+        android:hint="Peso(Kg)"
+        android:inputType="numberDecimal"/>
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAltura"
+        android:hint="Altura(m)"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcularImc"
+        android:text="Calcular imc" />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMC:" android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgResultadoImc"
+        android:src="@drawable/perfil"
+        android:layout_gravity="center_horizontal"/>
+
+ </LinearLayout>
+
+ </ScrollView>
+
+</LinearLayout>
