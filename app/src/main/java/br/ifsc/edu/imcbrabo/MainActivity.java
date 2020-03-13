@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         if(view==findViewById(R.id.btnIMC)){
             Intent intent = new Intent(this,CalcularIMC.class);
             startActivity(intent);
+            
         }
 
     }
